@@ -1,0 +1,10 @@
+#!/bin/zsh
+
+(
+    RUN="$HOME/main/accounting/accounting-hondenmeesters/sources/unsorted/test/2026/paynl-2026/api/runs/2026-11-06t18-25-11z-392e8599-471b-402b-b037-0e1c2b34bb8e"
+
+    swift run t_banking;
+
+    swift run banking finalize-run "$RUN";
+    swift run banking verify-run "$RUN";
+)
