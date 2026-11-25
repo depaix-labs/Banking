@@ -21,11 +21,11 @@ let package = Package(
         .package(path: "../Bunq"),
         .package(path: "../PayNL"),
         .package(
-            url: "https://github.com/leviouwendijk/Milieu.git",
+            url: "https://github.com/swift-lco/Milieu.git",
             branch: "master"
         ),
         .package(
-            url: "https://github.com/leviouwendijk/Arguments.git",
+            url: "https://github.com/swift-lco/Arguments.git",
             branch: "master"
         ),
     ],
